@@ -18,6 +18,14 @@ ul {
   --title-color: #393939;
   --first-color-alt: #048654;
 }
+
+.border {
+  border: 2px solid black;
+}
+.margin-left {
+  margin-left: 180px;
+}
+
 header {
   background-color: var(--header-bg-color);
   box-shadow: 1px 1px 10px var(--header-text-color);
@@ -54,16 +62,13 @@ header {
 /* ----------------------------------------------HOME BODY STYLING--------------------------------------- */
 
 .home-body {
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-height: 90vh;
 }
 .home-body-left {
-  /* border: 1px solid red; */
   padding-top: 130px;
-  padding-left: 180px;
   width: 50%;
 }
 .home-body-left-heading {
@@ -79,7 +84,6 @@ header {
   margin-bottom: 20px;
 }
 .home-body-right {
-  /* border: 1px solid red; */
   width: 50%;
   padding-top: 30px;
   padding-left: 40px;
@@ -106,7 +110,6 @@ header {
 
 /* ---------------------------------------------------About page page styling-------------------- */
 .about-page {
-  /* border: 1px solid red; */
   width: 100%;
   min-height: 90vh;
 }
@@ -116,7 +119,6 @@ header {
   clear: both;
 }
 .about-image-container {
-  /* border: 1px solid black; */
   width: 400px;
   height: 400px;
   margin-left: 180px;
@@ -129,7 +131,6 @@ header {
   border-radius: 15px;
 }
 .about-page-right {
-  /* border: 1px solid red; */
   width: 50%;
   float: right;
   padding-left: 100px;
@@ -156,7 +157,6 @@ header {
 }
 /* ------------------------SERVICES----------- */
 #services {
-  /* border: 1px solid red; */
   width: 100%;
   min-height: 90vh;
 }
@@ -185,7 +185,6 @@ header {
   justify-content: space-around;
   width: 80%;
   height: 300px;
-  margin-left: 180px;
 }
 .services-container .services-content {
   width: 25%;
@@ -212,12 +211,10 @@ header {
 }
 /* ------------------------MENU----------- */
 #menu {
-  /* border: 1px solid black; */
   min-height: 100vh;
   width: 100%;
 }
 #menu .menu-title {
-  /* border: 1px solid red; */
   width: 100%;
   min-height: 250px;
   display: flex;
@@ -235,15 +232,13 @@ header {
   font-weight: bolder;
 }
 .menu-content {
-  /* border: 1px solid red; */
   min-height: 400px;
-  margin-left: 180px;
+
   width: 70%;
   display: flex;
   justify-content: space-around;
 }
 .menu-content .menu-content-details {
-  /* border: 1px solid black; */
   width: 200px;
   width: 20%;
   height: 40%;
@@ -251,7 +246,7 @@ header {
 .menu-content .menu-content-details .menu-image-container {
   width: 150px;
   height: 150px;
-  /* border: 1px solid black; */
+
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -287,22 +282,17 @@ header {
 }
 /* ---------------------------APP--------------------------------- */
 #app {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
-  /* border: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
-  margin-left: 180px;
 }
 #app .app-left {
-  /* border: 1px solid black; */
   width: 50%;
 }
 #app .app-left .app-image-container {
-  /* border: 1px solid red; */
   width: 350px;
   height: 500px;
-  margin-left: 100px;
   margin-top: 70px;
 }
 #app .app-left .app-image-container img {
@@ -310,11 +300,9 @@ header {
   height: 100%;
 }
 #app .app-right {
-  /* border: 1px solid black; */
   width: 50%;
 }
 #app .app-right .app-right-content {
-  /* border: 1px solid black; */
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 120px;
@@ -333,22 +321,20 @@ header {
   margin-bottom: 30px;
 }
 #app .app-right img {
-  /* border: 1px solid red; */
   width: 160px;
   height: 50px;
 }
 /* ---------------------------Contact--------------------------------- */
 #contact {
   width: 80%;
-  margin-left: 180px;
+
   margin-top: 100px;
   min-height: 30vh;
-  /* border: 1px solid red; */
+
   display: flex;
   flex-wrap: wrap;
 }
 #contact .contact-left {
-  /* border: 1px solid black; */
   width: 60%;
 }
 #contact .contact-left h3 {
@@ -369,17 +355,15 @@ header {
 }
 /* ---------------------------------------------------Footer content-------------------- */
 #footer-content {
-  /* border: 1px solid red; */
   width: 80%;
   min-height: 20vh;
-  margin-left: 180px;
+
   display: flex;
   flex-wrap: wrap;
   margin-top: 150px;
   margin-bottom: 40px;
 }
 #footer-content .footer-content-items {
-  /* border: 1px solid red; */
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -395,12 +379,134 @@ header {
   font-weight: bold;
 }
 #footer {
-  /* border: 1px solid red; */
   width: 80%;
   min-height: 10vh;
-  margin-left: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--title-color);
+}
+
+/* ====================MEDIA QUERIES============== */
+
+@media screen and (max-width: 1199px) {
+  body {
+    background-color: var(--header-bg-color);
+  }
+}
+@media screen and (max-width: 991px) {
+  body {
+    background-color: yellowgreen;
+  }
+
+  .margin-left
+  {
+    margin-left: 50px;
+  }
+  /* ===================HOME PAGE STYLING================= */
+  .home-body-left {
+    margin-left: 50px;
+  }
+  .home-body-left-heading {
+    font-size: 50px;
+  }
+  .home-body-left-slogo {
+    font-size: 30px;
+  }
+  .home-body-right {
+    padding-left: 10px;
+  }
+  .home-body-right img {
+    width: 380px;
+    height: 380px;
+  }
+
+  /* ==========================About page page styling================= */
+
+  .about-image-container {
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+  }
+
+  .about-page-right {
+    padding-left: 50px;
+  }
+  .about-page-right .about-page-right-title {
+    color: var(--first-color);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .about-page-right .about-page-right-heading {
+    font-size: 30px;
+  }
+  .about-page-right .about-page-right-content {
+    font-size: 15px;
+  }
+
+  /* ------------------------SERVICES----------- */
+
+  .section-subtitle {
+    font-size: 20px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .heading-container {
+    margin: 0px auto;
+    margin-top: 120px;
+  }
+
+  .services-container .services-content {
+    width: 30%;
+    
+  }
+/* ----------------Menu page styling---------------- */
+
+#menu .menu-title h2 {
+
+  font-size: 30px;
+}
+#menu .menu-title p {
+
+  font-size: 35px;
+ 
+}
+.menu-content {
+ 
+
+  width: 80%;
+  
+}
+
+/* ---------------------------Contact--------------------------------- */
+#contact {
+  width: 100%;
+
+}
+#contact .contact-left {
+  width: 100%;
+  text-align: center;
+}
+
+#contact .contact-right {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: violet;
+  }
 }
