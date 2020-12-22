@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- font-awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/>
+
   <!--========== BOX ICONS ==========-->
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -14,16 +20,39 @@
 
 <body>
   <!-- NAV BAR STYLING -->
-  <header>
-    <div class="logo">Tasty</div>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="">Home</a></li>
-      <li class="nav-item"><a href="">About</a></li>
-      <li class="nav-item"><a href="">Services</a></li>
-      <li class="nav-item"><a href="">Menu</a></li>
-      <li class="nav-item"><a href="">Contact Us</a></li>
-    </ul>
-  </header>
+
+  <nav>
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+       Taste Hub
+        <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">services</a>
+        </li>
+        <li>
+          <a href="#menu">menu</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+   
+     
+    </div>
+  </nav>
   <!-- HOME BODY STYLING -->
   <section class="home-body">
 
@@ -43,7 +72,7 @@
 
   </section>
   <!-- ABOUT PAGE STYLING -->
-  <div class="about-page">
+  <div id="about" class="about-page">
     <div class="about-page-left border">
       <div class="about-image-container">
         <img src="./assets/about.jpg" alt="about-image" />
@@ -426,7 +455,7 @@
       </p>
     </div>
     <div class="contact-right border">
-      <button class="btn">Contact Us</button>
+      <button class="btn"><a href="https://www.instagram.com/abd._.ur._.rehman/"  style="color: white;">Contact Us</a> </button>
     </div>
   </section>
   <section id="footer-content" class="border margin-left">
@@ -459,6 +488,8 @@
   <section id="footer" class="border margin-left">
     <p>2020 Tasty food All right reserved</p>
   </section>
+
+  <script src="./js/app.js"></script>
 
 </body>
 
