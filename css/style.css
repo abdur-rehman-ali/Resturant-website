@@ -866,10 +866,7 @@ nav {
   }
 }
 @media screen and (max-width: 394px) {
-  body
-  {
-    background-color: yellow;
-  }
+ 
   /* =============================Home body styling===================== */
   .home-body {
     display: flex;
